@@ -4,53 +4,152 @@
     <meta charset="utf-8">
     <title>Git cheat sheet</title>
   </head>
-<body style="text-align:center;">
+<body>
+	<!-- header -->
+
 	<header>
 	  <h1>Les commandes principales de git</h1> 
 	</header>
 
 	<!-- navigation -->
+
 	<nav>
 		<ul>
 			<li><a href="../htmlcheatsheetterminal/terminal-cheatsheetindex.html" target="_self">Terminal</a></li>
 			<li><a href="../htmlcheatsheetvim/vim-cheatsheetindex.html" target="_self">Vim</a></li>
 			<li><a href="git-cheatsheetindex.html" target="_self">Git</a></li>
+			<li><a href="contact.html" target="_self">Contact</a></li>
 		</ul>
 	</nav>
 
-	  
-    
-  
- 
-  
-   
+	<section> 
 
-  _Créer un nouveau projet et initialiser Git
-   
-+ <code>git init</code> : pour créer un nouveau dépôt GIT
-+ `git status` : affiche la liste des fichiers modifiés ainsi que les fichiers qui doivent encore être ajoutés ou validés
-+ `git add nomdufichier`: pour ajouter des fichiers à l'index
-+ `git commit -m « Nommez les changements apportés »` (ne pas oublier les « . »!)
 
+	<table> 
+		
+		<!--Commandes pour créer un nouveau projet et initialiser git-->
+
+		<tr>
+
+			<th><b>Commandes</b></th> 
+			<th><b>Actions</b></th>
+
+		</tr>
+
+		<tr>
+			<td><code>git init</code></td>
+			<td>créer un nouveau dépôt GIT</td>
+		</tr>
+
+		<tr>
+			<td><code>git status</code>s</td>
+			<td>affiche la liste des fichiers modifiés</td>
+		</tr>
+
+		<tr>
+			<td><code>git add</code></td>
+			<td>ajouter des fichiers à l'index</td>
+		</tr>
+
+		<tr>
+			<td><code>git commit</code></td>
+			<td>stocke les changements de l’Index dans le dépôt</td>
+
+		</tr>
+
+		<tr>
+			<td><code>git diff</code></td>
+			<td>Affiche les différences par rapport à l’Index</td>
+		</tr>
+
+		<tr>
+			<td><code>git log</code></td>
+			<td>Affiche la liste des derniers commits<td>
+		</tr>
+
+		<tr>
+			<td><code>git push</code></td>
+			<td>envoie les modifications locales apportées à la branche principale associée</td>
+		</tr>
 	
-+ `git diff` (indication sur les changement apportés)h
 
-+ `git log` : Pour voir les différentes modifications apportées, son auteur, la date et le nom de la branche. 
+		<tr>
+			<td><code>git checkout</code></td>
+			<td>pour créer des branches ou pour basculer entre elles</td>
+		</tr>
 
-+ `Git push` : Un simple push envoie les modifications locales apportées à la branche principale associée :
-+ `git push origin master`
-+ `Git checkout` :  pour créer des branches ou pour basculer entre elles.
-+ `git checkout -b <nom-branche>`
-+ `git checkout <nom-branche>` : Pour passer simplement d’une branche à une autre
-+ `git remote`: permet à un utilisateur de se connecter à un dépôt distant.
-+ `git remote –v` :  répertorie les dépôts distants actuellement configurés
-+ `git branch` : peut être utilisée pour répertorier, créer ou supprimer des branches.
-+ `git branch –d <nom-branche>` : Pour supprimer une branche
-+ `git pull` : Pour fusionner toutes les modifications présentes sur le dépôt distant dans le répertoire de travail local
-+ `git merge <nom-branche>`: est utilisée pour fusionner une branche dans la branche active
-+ `git diff` : permet de lister les conflits
-+ `git diff --base <nom-fichier>` :  Pour visualiser les conflits d’un fichier
-+ `Git fetch` : permet à un utilisateur d’extraire tous les fichiers du dépôt distant qui ne sont pas actuellement dans le répertoire                   de travail local.  
-+ `git rebase master` : utilisée pour la réapplication des commits sur une autre branche.  
-  </body>
+		<tr>
+			<td><code>git checkout <nom-branche></code></td>
+			<td>passer d’une branche à une autre</td>
+		</tr>
+
+		<tr>
+			<td><code>git remote</code></td>
+			<td>permet à un utilisateur de se connecter à un dépôt distant</td>
+		</tr>
+
+		<tr>
+			<td><code>git remote -v</code></td>
+			<td>répertorie les dépôts distants actuellement configurés</td>
+		</tr>
+
+		<tr>
+			<td><code>git branch</code/></td>
+			<td>pour répertorier, créer ou supprimer des branches</td>
+		</tr>
+
+		<tr>
+			<td><code>git branch –d <nom-branche></code></td>
+			<td>Pour supprimer une branche</td>
+		</tr>
+
+		<tr>
+			<td><code>git pull</code></td>
+			<td>Pour récupérer toutes les modifications présentes sur le dépôt distant</td>
+		</tr>
+
+		<tr>
+			<td><code>git merge <nom-branche></code></td>
+			<td>utilisée pour fusionner une branche dans la branche active</td>
+		</tr>
+
+		<tr>
+			<td><code>git diff</code></td>
+			<td>permet de lister les conflits</td>
+		</tr>
+
+		<tr>
+			<td><code>git diff --base <nom-fichier></code></td>
+			<td>Pour visualiser les conflits d’un fichier</td>
+		</tr>
+
+		<tr>
+			<td><code>git fetch</code></td>
+			<td>permet d’extraire tous les fichiers du dépôt distant non présents dans le répertoire</td>
+		</tr>
+
+		<tr>
+			<td><code>git rebase master</code></td>
+			<td>utilisée pour la réapplication des commits sur une autre branche</td>
+		</tr>
+
+
+	</table>
+
+
+	</section>
+
+
+		<footer>
+
+
+			<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Ce(tte) œuvre de <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">BSSOLEIL</span> est mise à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International</a>.
+	
+		
+		</footer>
+
+
+
+</body>
+
 </html>
